@@ -1,0 +1,42 @@
+$gray: #afafbd;
+$dollars: #12121f;
+.price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 120px;
+  background: #ffffff;
+  border-radius: 19.8652px;
+  &__container {
+    margin-left: 25px;
+  }
+  &__title {
+    font-family: 'Montserrat-Regular';
+    font-weight: 600;
+    font-size: 13.2434px;
+    line-height: 16px;
+    color: #12121f;
+  }
+
+  &__wrapp {
+    display: flex;
+    padding: 10px 0 6px 0;
+    align-items: center;
+  }
+
+  &__footer {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 12px;
+    color: $gray;
+  }
+
+  &__coin {
+    padding-right: 10px;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    color: $dollars;
+  }
+}

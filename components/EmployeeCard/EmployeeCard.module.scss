@@ -1,0 +1,109 @@
+$darkBlue: #212353;
+$white: #ffffff;
+$blue: #3664d8;
+$whiteGray: #fbfbfb;
+
+.employee {
+  width: 485px;
+  display: inline-block;
+  height: 265px;
+  background: $white;
+  box-shadow: 0px 2.84946px 28.4946px rgba(0, 0, 0, 0.25);
+  border-radius: 35.6183px;
+  margin-top: 190px;
+
+  &__wrapp {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    padding: 27px 0 0 37px;
+    margin-bottom: 4px;
+  }
+  &__avatar {
+    flex: 0 0 115px;
+    height: 115px;
+    border-radius: 50%;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__name {
+    p {
+      font-family: 'Montserrat-Bold', sans-serif;
+      font-size: 18px;
+      line-height: 25px;
+      color: $darkBlue;
+    }
+  }
+  &__position {
+    p {
+      font-family: 'Montserrat-ExtraLight', sans-serif;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+      color: $darkBlue;
+    }
+  }
+  &__description {
+    p {
+      max-width: 310px;
+      font-family: 'Montserrat-Italic', sans-serif;
+      font-size: 18px;
+      line-height: 23px;
+      text-align: center;
+      margin-left: 130px;
+      color: $darkBlue;
+    }
+  }
+}
+
+.text__wrapp {
+  display: flex;
+  flex-direction: column;
+  padding-left: 28px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  &__title {
+    font-family: 'Montserrat-ExtraLight', sans-serif;
+    font-weight: 300;
+    font-size: 31px;
+    line-height: 30px;
+    color: $darkBlue;
+    text-align: center;
+    margin-bottom: 59px;
+  }
+  &__info {
+    width: 615px;
+    height: 372px;
+    background: $blue;
+    box-shadow: 0px 4px 28.49px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+  }
+
+  &__header {
+    display: inline-block;
+    width: 292px;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 130%;
+    align-items: center;
+    color: $whiteGray;
+    margin: 41px 0 0 59px;
+
+    span {
+      font-family: 'Montserrat-Bold', sans-serif;
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+}
