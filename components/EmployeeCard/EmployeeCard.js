@@ -31,7 +31,7 @@ function EmployeeCard({img, name, position, description}) {
                 </p>
                 <div className={styles.card__info}>
                     <h3 className={styles.card__header}>
-                        Fonts &amp; Colors <span>Matter</span>
+                        Fonts &amp; Colors &nbsp; <span>Matter</span>
                     </h3>
                     <div className={styles.card__item}>
                         <PriceWrapper />

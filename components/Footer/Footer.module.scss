@@ -1,0 +1,22 @@
+$darkBlue: #212353;
+
+.title {
+  font-family: 'Montserrat-ExtraLight';
+  font-size: 26.3476px;
+  line-height: 110%;
+
+  color: $darkBlue;
+
+  &__rights {
+    font-family: 'Montserrat-Regular';
+    font-weight: 600;
+    color: $darkBlue;
+    padding: 55px 0 15px 0;
+  }
+
+  &__privacy {
+    font-family: 'Montserrat-ExtraLight';
+    font-weight: 600;
+    color: $darkBlue;
+  }
+}

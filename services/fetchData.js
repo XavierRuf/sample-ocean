@@ -4,7 +4,6 @@ async function getCurrency(type, callback) {
             return response.json();
         })
         .then((data) => {
-            console.log(data)
             return data
         });
 

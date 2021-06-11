@@ -5,8 +5,6 @@ import styles from './PriceCard.module.scss';
 
 function PriceCard({title, footer, type}) {
     const [state, setState] = useState({price:0, percent:0});
-    
-    console.log(state)
     useEffect(async() => {
         getCurrency(type, setState)
  
@@ -15,6 +13,7 @@ function PriceCard({title, footer, type}) {
        },   7000);
     }, [])
 
+    let addColor = state.percent > 0;
     return (
         <div>
             <div className={styles.price}>
@@ -22,8 +21,8 @@ function PriceCard({title, footer, type}) {
                     <p className={styles.price__title}>{title}</p>
                     <div className={styles.price__wrapp}>
                         <p className={styles.price__coin}>${state.price}</p> 
-                        
-                        <p>{state.percent}<span>%</span></p>
+                        <p className={`${addColor ? styles.plus : styles.minus} ${styles.price__percent}`}>{state.percent}<span>%</span></p>
+
                         {state.percent > 0 ? <span>&uarr;</span> : <span>&darr;</span>}
                     </div>
                 <p className={styles.price__footer}>{footer}</p>
@@ -34,3 +33,4 @@ function PriceCard({title, footer, type}) {
 }
 
 export default PriceCard
+// addColor ? styles.plus : styles.minus

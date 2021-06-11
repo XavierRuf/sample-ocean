@@ -3,7 +3,6 @@ import styles from './CoderComment.module.scss';
 function CoderComment({avatar,name,text,time,rating}) {
 const [commentRating, setCommentRating] = useState(rating)
     const arr = new Array(5).fill(0)
-    console.log(arr)
     return (
         <div>
             <div className={styles.coder}>
@@ -11,8 +10,8 @@ const [commentRating, setCommentRating] = useState(rating)
                     <img src={avatar}/>
                 </div>
                 <div className={styles.coder__message}>
-                    <p>{text}</p>
-                    <p>{name}</p>
+                    <p className={styles.coder__text}>{text}</p>
+                    <p className={styles.coder__name}>{name}</p>
                 </div>
                 <div className={styles.coder__rating}>
                     <p>{time}</p>

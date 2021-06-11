@@ -8,6 +8,7 @@ $dollars: #12121f;
   height: 120px;
   background: #ffffff;
   border-radius: 19.8652px;
+  margin-left: 10px;
   &__container {
     margin-left: 25px;
   }
@@ -39,4 +40,22 @@ $dollars: #12121f;
     line-height: 28px;
     color: $dollars;
   }
+
+  &__percent {
+    font-family: 'Montserrat-Regular';
+    font-weight: 600;
+    font-size: 13.2434px;
+    line-height: 16px;
+
+    color: #4643d3;
+  }
+}
+
+// ADD CLASS FOR PERCENT PLUS OR MINUS COIN
+.plus {
+  color: #fe805c;
+}
+
+.minus {
+  color: #4643d3;
 }

@@ -1,5 +1,6 @@
 import Header from '../Header/Header';
 import Comment from '../Comment/Comment';
+import Footer from '../Footer/Footer'
 import CoderComment from '../CoderComment/CoderComment'
 import EmployeeCard from '../EmployeeCard/EmployeeCard';
 import {constants} from '../../const';
@@ -40,11 +41,13 @@ function Container() {
                         </div>
                     </div>
                 </section>
-
+                <section className={styles.section}>
+                    <div className={styles.footer}>
+                        <Footer />
+                    </div>
+                </section>
             </div>
-            {/* <PriceWrapper />
-            {constants.comments.map(item=> <Comment path={item.avatar} />)}
-            {constants.coderComments.map(item=><CoderComment avatar={item.avatar} name={item.name} text={item.text} time={item.time} rating={item.rating} key={item.name+item.path}/>)}  */}
+            
         </div> 
     )
 }

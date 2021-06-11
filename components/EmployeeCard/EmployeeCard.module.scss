@@ -16,6 +16,12 @@ $whiteGray: #fbfbfb;
     display: flex;
     justify-content: space-between;
   }
+  @media (max-width: 1200px) {
+    &__wrapp {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
   &__info {
     display: flex;
     align-items: center;
@@ -61,6 +67,13 @@ $whiteGray: #fbfbfb;
   }
 }
 
+@media (max-width: 1200px) {
+  .employee {
+    margin-top: 65px;
+    margin: 65px 0 55px 0;
+  }
+}
+
 .text__wrapp {
   display: flex;
   flex-direction: column;
@@ -103,7 +116,24 @@ $whiteGray: #fbfbfb;
     }
   }
 
+  @media (max-width: 1200px) {
+    &__header {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: 0;
+      padding: 45px 0 30px 0;
+    }
+  }
+
   &__item {
     display: flex;
+  }
+
+  @media (max-width: 1200px) {
+    &__item {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
