@@ -1,5 +1,6 @@
 $lightBlue: #3664d8;
 $white: #ffffff;
+
 .container {
   max-width: 1260px;
   margin: auto;
@@ -23,12 +24,19 @@ $white: #ffffff;
     align-items: center;
     min-height: 80px;
   }
+
+  @media (max-width: 545px) {
+    &__logo {
+      justify-content: center;
+    }
+  }
   &__lRect {
     width: 11.84px;
     height: 11.84px;
 
     background: $white;
     border-radius: 11.8362px;
+    margin: 9px 5px 0 0;
   }
   &__rRect {
     width: 11.84px;

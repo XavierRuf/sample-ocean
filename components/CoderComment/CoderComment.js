@@ -17,7 +17,7 @@ const [commentRating, setCommentRating] = useState(rating)
                     <p>{time}</p>
                     <div>            
                         {arr.map((_,index)=><span className={cn('rating-count',{'rated':index+1<=commentRating})} data-id={index+1} tabIndex={0} 
-                        onClick={(e)=>setCommentRating(e.target.dataset.id)} key={index+1}>&#9734;</span>)}
+                        onClick={(e)=>setCommentRating(e.target.dataset.id)} key={index+1}>&#9733;</span>)}
                     </div>
                 </div>
 
