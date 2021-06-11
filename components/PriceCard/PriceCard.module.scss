@@ -1,5 +1,10 @@
 $gray: #afafbd;
 $dollars: #12121f;
+
+.price__convert {
+  display: flex;
+}
+
 .price {
   display: flex;
   flex-direction: column;
@@ -9,6 +14,15 @@ $dollars: #12121f;
   background: #ffffff;
   border-radius: 19.8652px;
   margin-left: 10px;
+
+  &__bitcoin {
+    display: flex;
+  }
+
+  &__etherium {
+    display: flex;
+  }
+
   &__container {
     margin-left: 25px;
   }
