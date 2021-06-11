@@ -13,7 +13,7 @@ $darkBlue: #212353;
   padding: 0 15px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
   .container {
     max-width: 970px;
   }
@@ -35,6 +35,14 @@ $darkBlue: #212353;
   color: $darkBlue;
 }
 
+@media (max-width: 1230px) {
+  .main__title {
+    max-width: none;
+    display: block;
+    text-align: center;
+  }
+}
+
 .section {
   max-width: 830px;
   padding: 0 15px;
@@ -51,11 +59,6 @@ $darkBlue: #212353;
     font-size: 32.9px;
 
     color: #212353;
-  }
-
-  &__item {
-    display: flex;
-    flex-direction: column;
   }
 
   &__wrapp {

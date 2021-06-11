@@ -1,34 +1,11 @@
 $white: #ffffff;
 
-.pirce__wrapper {
+.price__wrapper {
   display: flex;
 }
 
-// .card__bg {
-//   width: 682px;
-//   height: 372px;
-//   background: #3664d8;
-//   box-shadow: 0px 4px 28.49px rgba(0, 0, 0, 0.25);
-//   border-radius: 50px;
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .card__matter {
-//   max-width: 292px;
-//   font-family: 'Montserrat-ExtraLight', sans-serif;
-//   font-size: 34px;
-//   line-height: 110%;
-//   color: $white;
-//   margin: 41px 0 0 59px;
-
-//   span {
-//     font-family: 'Montserrat-Regular', sans-serif;
-//   }
-// }
-
-// .cards__left {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
+@media (max-width: 1230px) {
+  .price__wrapper {
+    flex-direction: column;
+  }
+}
