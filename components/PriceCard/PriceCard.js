@@ -5,12 +5,7 @@ import styles from './PriceCard.module.scss';
 
 function PriceCard({title, footer, type}) {
     const [state, setState] = useState({price:0, percent:0});
-    const [colorPrice, setColorPrice] = useState(null);
-
-    const changeColor = (colorPrice) => {
-        setColorPrice(colorPrice);
-    }
-
+    
     console.log(state)
     useEffect(async() => {
         getCurrency(type, setState)

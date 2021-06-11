@@ -15,9 +15,35 @@ function Container() {
                     <h1 className={styles.main__title}>Do The Task And Have Fun</h1>
                     {constants.card.map(items => <EmployeeCard img={items.img} name={items.name} position={items.position} description={items.description} key={items.name}/>)}
                 </div>
+                <section className={styles.section}>
+                    <div className={styles.comments}>
+                        <h2 className={styles.comments__title}> 
+                            What Pros Are Saying...
+                        </h2>
+                        <div className={styles.comments__item}>
+                            <div className={styles.comments__wrapp}>
+                                {constants.comments.map(item => <Comment path={item.avatar} name={item.name} text={item.text} key={item.name+item.path} />)}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                {/* section 2 */}
+                <section className={styles.section}>
+                    <div className={styles.coders}>
+                        <h3 className={styles.coders__title}>
+                            What Other Coders Are Saying...
+                        </h3>
+                        <div className={styles.coders__item}>
+                            <div className={styles.coders__wrapp}>
+                                {constants.coderComments.map(item=><CoderComment avatar={item.avatar} name={item.name} text={item.text} time={item.time} rating={item.rating} key={item.name+item.path}/>)}
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
             </div>
             {/* <PriceWrapper />
-            {constants.comments.map(item=> <Comment path={item.avatar} name={item.name} text={item.text} key={item.name+item.path}/>)}
+            {constants.comments.map(item=> <Comment path={item.avatar} />)}
             {constants.coderComments.map(item=><CoderComment avatar={item.avatar} name={item.name} text={item.text} time={item.time} rating={item.rating} key={item.name+item.path}/>)}  */}
         </div> 
     )

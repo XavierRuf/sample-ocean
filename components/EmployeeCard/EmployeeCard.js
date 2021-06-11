@@ -1,4 +1,5 @@
 import PriceWrapper from '../PriceWrapper/PriceWrapper';
+
 import styles from './EmployeeCard.module.scss';
 
 function EmployeeCard({img, name, position, description}) {

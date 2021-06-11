@@ -12,8 +12,3 @@ function PriceWrapper() {
 }
 
 export default PriceWrapper;
-
-
-// <h3 className={styles.card__matter}>
-//  
-// </h3>

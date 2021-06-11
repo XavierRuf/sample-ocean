@@ -1,0 +1,41 @@
+.comment {
+  width: 249.05px;
+  height: 293px;
+  background: #ffffff;
+  border-radius: 21.975px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  &__avatar {
+    flex: 0 0 76px;
+    height: 76px;
+    overflow: hidden;
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__name {
+    margin: 12px 0 30px 0;
+    font-family: 'Montserrat-Bold';
+    font-size: 17.7555px;
+    line-height: 22px;
+    color: #000000;
+  }
+
+  &__text {
+    width: 205px;
+    font-family: 'Montserrat-ExtraLight';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+  }
+
+  &__wrapp {
+    padding-top: 26px;
+  }
+}
