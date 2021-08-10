@@ -33,11 +33,11 @@ const comments = [{
 }, {
     avatar: Galya,
     name: 'Abigale',
-    text: "“I am so sexy, that men are doing  test tasks for me for free.”"
+    text: "“I love listening music.”"
 }, {
     avatar: Fedya,
     name: 'Fedya',
-    text: '“Kuku Epta. EZ Task.”'
+    text: '“Kuku, it so EZ Task.”'
 }]
 
 const coderComments = [

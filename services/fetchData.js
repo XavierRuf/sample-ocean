@@ -2,7 +2,7 @@ async function getCurrency(type, callback) {
     const fetchedData = await fetch(`https://data.messari.io/api/v1/assets/${type}/metrics`)
         .then((response) => {
             return response.json();
-        })
+        }).catch(err => console.log('Обратите внимание на ошибку :',err))
         .then((data) => {
             return data
         });
