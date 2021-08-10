@@ -75,8 +75,14 @@ $dollars: #12121f;
 // ADD CLASS FOR PERCENT PLUS OR MINUS COIN
 .plus {
   color: #fe805c;
+  cursor: pointer;
 }
 
 .minus {
   color: #4643d3;
+  cursor: pointer;
+}
+
+.stars {
+  cursor: pointer;
 }

@@ -22,7 +22,7 @@ function PriceCard({title, footer, type}) {
                     <div className={styles.price__wrapp}>
                         <p className={styles.price__coin}>${state.price}</p> 
                         <p className={`${state.percent > 0 ? styles.plus : styles.minus} ${styles.price__percent}`}>{state.percent}<span>%</span></p>
-                        {state.percent > 0 ? <span>&uarr;</span> : <span>&darr;</span>}
+                        {state.percent > 0 ? <span className={styles.plus}>&uarr;</span> : <span className={styles.minus}>&darr;</span>}
                     </div>
                     <p className={styles.price__footer}>{footer}</p>
                 </div>

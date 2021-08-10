@@ -43,6 +43,12 @@ $darkBlue: #212353;
   }
 }
 
+@media (max-width: 476px) {
+  .main__title {
+    font-size: 41px;
+  }
+}
+
 .section {
   max-width: 830px;
   padding: 0 15px;
@@ -66,9 +72,16 @@ $darkBlue: #212353;
     justify-content: space-between;
     margin-top: 55px;
   }
+
+  @media (max-width: 879px) {
+    &__wrapp {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
   .comments {
     margin-top: 70px;
   }
@@ -84,6 +97,7 @@ $darkBlue: #212353;
     font-size: 33px;
     color: #212353;
     margin-bottom: 50px;
+    text-align: center;
   }
 }
 

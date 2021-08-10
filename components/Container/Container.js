@@ -1,10 +1,10 @@
 import Header from '../Header/Header';
 import Comment from '../Comment/Comment';
-import Footer from '../Footer/Footer'
-import CoderComment from '../CoderComment/CoderComment'
+import Footer from '../Footer/Footer';
+import CoderComment from '../CoderComment/CoderComment';
 import EmployeeCard from '../EmployeeCard/EmployeeCard';
 import {constants} from '../../const';
-import styles from './Container.module.scss'
+import styles from './Container.module.scss';
 
 function Container() {
 

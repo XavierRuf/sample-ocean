@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   position: relative;
+
   &__avatar {
     flex: 0 0 50px;
     height: 50px;
@@ -56,4 +57,37 @@
       opacity: 0.5;
     }
   }
+}
+
+@media (max-width: 701px) {
+  .coder {
+    width: unset;
+    justify-content: space-evenly;
+
+    @media (max-width: 475px) {
+      &__text {
+        font-size: 11px;
+      }
+
+      &__name {
+        font-size: 11px;
+      }
+
+      &__rating {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    &__rating {
+      position: static;
+      right: 0;
+      padding-right: 20px;
+    }
+  }
+}
+
+.rating__stars {
+  cursor: pointer;
 }

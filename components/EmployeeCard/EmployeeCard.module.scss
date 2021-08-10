@@ -28,6 +28,7 @@ $whiteGray: #fbfbfb;
     padding: 27px 0 0 37px;
     margin-bottom: 4px;
   }
+
   &__avatar {
     flex: 0 0 115px;
     height: 115px;
@@ -54,6 +55,7 @@ $whiteGray: #fbfbfb;
       color: $darkBlue;
     }
   }
+
   &__description {
     p {
       max-width: 310px;
@@ -63,6 +65,24 @@ $whiteGray: #fbfbfb;
       text-align: center;
       margin-left: 130px;
       color: $darkBlue;
+    }
+  }
+
+  @media (max-width: 575px) {
+    &__info {
+      padding-left: 15px;
+    }
+
+    &__position {
+      p {
+        font-size: 16px;
+      }
+    }
+
+    &__description {
+      p {
+        margin: 25px auto;
+      }
     }
   }
 }
@@ -110,6 +130,12 @@ $whiteGray: #fbfbfb;
     }
   }
 
+  @media (max-width: 625px) {
+    &__info {
+      width: 100%;
+    }
+  }
+
   &__header {
     display: inline-block;
     width: 292px;
@@ -134,6 +160,12 @@ $whiteGray: #fbfbfb;
       justify-content: center;
       margin: 0;
       padding: 35px 0 15px 0;
+    }
+  }
+
+  @media (max-width: 575px) {
+    &__header {
+      font-size: 25px;
     }
   }
 

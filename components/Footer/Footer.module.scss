@@ -20,3 +20,13 @@ $darkBlue: #212353;
     color: $darkBlue;
   }
 }
+
+@media (max-width: 701px) {
+  .title {
+    font-size: 22px;
+
+    &__rights {
+      padding-top: 15px;
+    }
+  }
+}
